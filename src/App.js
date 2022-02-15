@@ -3,6 +3,7 @@ import image from './images/arrow-right.png';
 import image1 from './images/bitcoin.png';
 import image2 from './images/letter-t.png';
 import image3 from './images/cancel.png';
+import ComponentNew from './ComponentNew';
 
 function App() {
   
@@ -26,38 +27,38 @@ function App() {
       <div className="App-div2">
       <p className="App-div2-p1">Ideal for new investors</p>
       <div className="App-div2-div">
-        <img src={image1} />
+        <img src={image1} className="img" />
         <p>Bitcoin</p>
-        <p>1st Quantity</p>
+        {/* <p>1st Quantity</p>
         <p>2nd Quantity</p>
-        <p>3rd Quantity</p>
+        <p>3rd Quantity</p> */}
       </div>
       <br />
 
       <div className="App-div2-div">
-        <img src={image2} />
+        <img src={image2} className="img"/>
         <p>Ethereum</p>
-        <p>1st Quantity</p>
+        {/* <p>1st Quantity</p>
         <p>2nd Quantity</p>
-        <p>3rd Quantity</p>
+        <p>3rd Quantity</p> */}
       </div>
       <br />
 
       <div className="App-div2-div">
-        <img src={image3} />
+        <img src={image3} className="img"/>
         <p>XRP</p>
-        <p>1st Quantity</p>
+        {/* <p>1st Quantity</p>
         <p>2nd Quantity</p>
-        <p>3rd Quantity</p>
+        <p>3rd Quantity</p> */}
       </div>
       <br />
 
       <div className="App-div2-div">
-        <img src={image1} />
+        <img src={image1} className="img"/>
         <p>Bitcoin</p>
-        <p>1st Quantity</p>
+        {/* <p>1st Quantity</p>
         <p>2nd Quantity</p>
-        <p>3rd Quantity</p>
+        <p>3rd Quantity</p> */}
       </div>
       <br />
 
@@ -68,38 +69,38 @@ function App() {
       <div className="App-div2 App-div3">
       <p className="App-div2-p1">Trending coins</p>
       <div className="App-div2-div">
-        <img src={image1} />
+        <img src={image1} className="img"/>
         <p>Bitcoin</p>
-        <p>1st Quantity</p>
+        {/* <p>1st Quantity</p>
         <p>2nd Quantity</p>
-        <p>3rd Quantity</p>
+        <p>3rd Quantity</p> */}
       </div>
       <br />
 
       <div className="App-div2-div">
-        <img src={image2} />
+        <img src={image2} className="img"/>
         <p>Ethereum</p>
-        <p>1st Quantity</p>
+        {/* <p>1st Quantity</p>
         <p>2nd Quantity</p>
-        <p>3rd Quantity</p>
+        <p>3rd Quantity</p> */}
       </div>
       <br />
 
       <div className="App-div2-div">
-        <img src={image3} />
+        <img src={image3} className="img"/>
         <p>XRP</p>
-        <p>1st Quantity</p>
+        {/* <p>1st Quantity</p>
         <p>2nd Quantity</p>
-        <p>3rd Quantity</p>
+        <p>3rd Quantity</p> */}
       </div>
       <br />
 
       <div className="App-div2-div">
-        <img src={image1} />
+        <img src={image1} className="img"/>
         <p>Bitcoin</p>
-        <p>1st Quantity</p>
+        {/* <p>1st Quantity</p>
         <p>2nd Quantity</p>
-        <p>3rd Quantity</p>
+        <p>3rd Quantity</p> */}
       </div>
       <br />
 
@@ -109,42 +110,43 @@ function App() {
       <div className="App-div2 App-div3">
       <p className="App-div2-p1">Non trending coins</p>
       <div className="App-div2-div">
-        <img src={image1} />
+        <img src={image1} className="img"/>
         <p>Bitcoin</p>
-        <p>1st Quantity</p>
+        {/* <p>1st Quantity</p>
         <p>2nd Quantity</p>
-        <p>3rd Quantity</p>
+        <p>3rd Quantity</p> */}
       </div>
       <br />
 
       <div className="App-div2-div">
-        <img src={image2} />
+        <img src={image2} className="img"/>
         <p>Ethereum</p>
-        <p>1st Quantity</p>
+        {/* <p>1st Quantity</p>
         <p>2nd Quantity</p>
-        <p>3rd Quantity</p>
+        <p>3rd Quantity</p> */}
       </div>
       <br />
 
       <div className="App-div2-div">
-        <img src={image3} />
+        <img src={image3} className="img"/>
         <p>XRP</p>
-        <p>1st Quantity</p>
+        {/* <p>1st Quantity</p>
         <p>2nd Quantity</p>
-        <p>3rd Quantity</p>
+        <p>3rd Quantity</p> */}
       </div>
       <br />
 
       <div className="App-div2-div">
-        <img src={image1} />
+        <img src={image1} className="img"/>
         <p>Bitcoin</p>
-        <p>1st Quantity</p>
+        {/* <p>1st Quantity</p>
         <p>2nd Quantity</p>
-        <p>3rd Quantity</p>
+        <p>3rd Quantity</p> */}
       </div>
       <br />
 
       </div>
+      <ComponentNew />
     </div>
   );
 }

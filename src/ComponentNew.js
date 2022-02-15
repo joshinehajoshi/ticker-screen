@@ -1,20 +1,35 @@
-// import { io } from "socket.io-client";
+import React, { useEffect, useState } from 'react';
+import io from 'socket.io-client';
+// import Messages from './Messages';
+// import MessageInput from './MessageInput';
 
-// const URL = "https://stg.clubdefy.io";
-// const socket = io(URL, { autoConnect: false });
-// socket.onAny((event, ...args) => {
-//   console.log(event, args);
-// });
-// io.on("connection", (socket) => {
-//   const users = [];
-//   for (let [id, socket] of io.of("/").sockets) {
-//     users.push({
-//       userID: id,
-//       username: socket.username,
-//     });
-//   }
-//   socket.emit("users", users);
-//   // ...
-// });
+import './App.css';
 
-// export default socket;
+function App() {
+  const [socket, setSocket] = useState(null);
+
+  useEffect(() => {
+    const newSocket = io(`http://${window.location.hostname}:3000`);
+    setSocket(newSocket);
+    return () => newSocket.close();
+  }, [setSocket]);
+
+  return (
+    <div className="App">
+      <header className="app-header">
+        React Chat
+      </header>
+      { socket ? (
+        <div className="chat-container">
+            connected
+          {/* <Messages socket={socket} />
+          <MessageInput socket={socket} /> */}
+        </div>
+      ) : (
+        <div>Not Connected</div>
+      )}
+    </div>
+  );
+}
+
+export default App;
