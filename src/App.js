@@ -16,12 +16,23 @@ function App() {
         <p className="App-p3">and experience the world class <br /> bitcoin app defi</p>
         <p className="App-p4">Start KYC <i class="fa-solid fa-arrow-right-long"></i></p>
       </div>
+
+
+
       <div className="App-div2">
-        <h1>1</h1>
+      <p className="App-div2-p1">Hi Jhon,</p>
+      <div className="App-div2-div">
+
       </div>
+      </div>
+
+
+
       <div className="App-div3">
         <h1>2</h1>
       </div>
+
+
       <div className="App-div4">
         <h1>3</h1>
       </div>
