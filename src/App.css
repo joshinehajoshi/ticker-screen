@@ -10,10 +10,11 @@ background-image: linear-gradient(180deg, rgb(77, 59, 126), rgb(0, 0, 0));
 .App {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .App-div1 {
-    width: 50%;
+    width: 40%;
     
     padding-left: 43px;
     color: white;
@@ -38,23 +39,33 @@ background-image: linear-gradient(180deg, rgb(77, 59, 126), rgb(0, 0, 0));
 }
 
 .App-div2 {
-    width: 50%;
+    width: 40%;
     color: white;
+    padding-left: 43px;
 }
 
 .App-div3 {
-    width: 50%;
+    width: 40%;
     color: white;
+    padding-top: 6rem;
 }
 
-.App-div4 {
-    width: 50%;
-    color: white;
-}
 
 .App-div2-p1 {
     font-size: 20px;
     padding-top: 20px;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.App-div2-div {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content:space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+    width: 90%;
 }
 
 
